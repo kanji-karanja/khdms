@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 07, 2018 at 09:29 AM
+-- Generation Time: Apr 07, 2018 at 07:29 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -207,7 +207,8 @@ CREATE TABLE `personnel` (
 --
 
 INSERT INTO `personnel` (`personnel_id`, `personnel_name`, `personnel_natid`, `personnel_nhifid`, `personnel_facility`, `personnel_facilityid`, `personnel_gender`, `personnel_designation`, `personnel_dob`, `personnel_phoneno`, `personnel_email`, `personnel_username`, `personnel_password`) VALUES
-(1, 'Karim Karanja Kanji', 34241316, 123456, 'Maseno Univeristy', 15, 'male', 'doctor', '1997-10-06', '0703756325', 'karimkanji101@gmail.com', 'kanji-karanja', 'infinity1997');
+(1, 'Karim Karanja Kanji', 34241316, 123456, 'Maseno Univeristy', 15, 'male', 'doctor', '1997-10-06', '0703756325', 'karimkanji101@gmail.com', 'kanji-karanja', 'infinity1997'),
+(2, 'Site Tester', 12345678, 12345678, 'Example Hospital', 2, 'Male', 'Doctor', '2018-04-02', '0712345678', 'sitetester@gmail.com', 'site-tester', '/password/');
 
 -- --------------------------------------------------------
 
@@ -449,7 +450,7 @@ ALTER TABLE `patients`
 -- AUTO_INCREMENT for table `personnel`
 --
 ALTER TABLE `personnel`
-  MODIFY `personnel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `personnel_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `prescription`
