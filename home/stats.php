@@ -1,9 +1,15 @@
 <?php
+/*
 $sitename = "localhost";
 $siteusername = "root";
 $sitepassword = "";
 $sitedatabase ="khdms";
-$conn=new mysqli($sitename,$siteusername,$sitepassword,$sitedatabase);
+*/
+//Gear host credentials for the gearhost sql server
+$conn=new mysqli("den1.mysql1.gear.host","khdms","Hw5Gp!!a0KVQ","khdms");
+//Local host credentials for localhost sql server
+//$conn=new mysqli("localhost","root","","khdms");
+//$conn=new mysqli($sitename,$siteusername,$sitepassword,$sitedatabase);
 if($conn->connect_error){
 die("<div class=\"alert alert-danger\"><strong>Error!</strong> There was a problem on our end.</div>");
 }
