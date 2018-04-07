@@ -1,5 +1,8 @@
 <?php
-$conn=new mysqli("localhost","root","","khdms");
+//Gear host credentials for the gearhost sql server
+$conn=new mysqli("den1.mysql1.gear.host","khdms","Hw5Gp!!a0KVQ","khdms");
+//Local host credentials for localhost sql server
+//$conn=new mysqli("localhost","root","","khdms");
 if(isset($_POST['addPat'])){
 	$natid=$_POST['pat_id'];
 	$patname=$_POST['pat_name'];
